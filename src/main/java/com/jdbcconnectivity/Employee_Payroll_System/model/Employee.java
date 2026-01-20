@@ -44,6 +44,6 @@ public class Employee {
 
     @Override
     public String toString() {
-        return empId + " | " + empName + " | " + department + " | " + designation;
+        return empId + " | " + empName + " | " + department + " | " + designation +" |" + address;
     }
 }

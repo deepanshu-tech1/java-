@@ -45,6 +45,6 @@ public class Salary {
 
     @Override
     public String toString() {
-        return salaryId + " | emp:" + empId + " | net:" + netSalary + " | " + salaryMonth;
+        return salaryId + " | emp:" + empId + " | net:" + netSalary + " | "+"salary month" +" " + salaryMonth;
     }
 }

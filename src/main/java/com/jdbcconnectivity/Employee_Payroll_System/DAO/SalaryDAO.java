@@ -1,6 +1,7 @@
 package com.jdbcconnectivity.Employee_Payroll_System.DAO;
 
 import com.jdbcconnectivity.Employee_Payroll_System.model.Salary;
+
 import com.jdbcconnectivity.Employee_Payroll_System.Util.DataBaseUtil;
 
 import java.sql.*;
