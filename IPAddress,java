@@ -1,0 +1,25 @@
+
+import java.util.*;
+import java . net.*;
+
+public class IPAddress {
+    public static void main(String[] args) throws Exception {
+        Enumeration<NetworkInterface> networks =
+                NetworkInterface.getNetworkInterfaces();
+
+        while (networks.hasMoreElements()) {
+            NetworkInterface network = networks.nextElement();
+
+            System.out.println("Network Interface: " + network.getDisplayName());
+
+            Enumeration<InetAddress> addresses =
+                    network.getInetAddresses();
+
+            while (addresses.hasMoreElements()) {
+                InetAddress address = addresses.nextElement();
+                System.out.println("  IP Address: " + address.getHostAddress());
+            }
+            System.out.println("--------------------------------");
+        }
+    }
+}
